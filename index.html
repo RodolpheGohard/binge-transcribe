@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Spotify Web Playback SDK Quick Start Tutorial</title>
+</head>
+
+<body>
+    <h1>Spotify Web Playback SDK Quick Start Tutorial</h1>
+    <h2>Open your console log: <code>View > Developer > JavaScript Console</code></h2>
+
+    <button onclick="player.resume()">resume</button>
+    <button onclick="player.seek(10*1000)">goto 10</button>
+    <button onclick="player.pause()">pause</button>
+
+    <button onclick="breakpoint()">set breakpoint</button>
+    <button onclick="player.seek(position)">restore breakpoint</button>
+
+    <button onclick="setLoopStart()">set Loop start</button>
+    <button onclick="setLoopEnd()">set Loop End</button>
+    <label>loop:</label><input name="loop" value="loop" type="checkbox" onchange="toggleLoop()" />
+
+    <script src="https://sdk.scdn.co/spotify-player.js"></script>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
